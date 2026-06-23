@@ -1,7 +1,7 @@
 #hero {
     background: var(--light-gray);
     border-top: 0.125rem solid #e4e4e4;
-    height: 90vh;
+    height: clamp(520px, 90vh, 800px);
     display: flex;
     position: relative;
 }
@@ -36,6 +36,8 @@
     #hero {
         background: var(--bg-color);
         border-top: none;
+        height: clamp(600px, 90vh, 860px);
+        align-items: center;
     }
 
     #hero > span {
@@ -47,6 +49,14 @@
         top: 0;
         height: 82%;
         max-width: 50%;
+    }
+
+    #hero .content {
+        margin-top: 0;
+    }
+
+    #hero .content > div {
+        margin-bottom: 0;
     }
 
     .content p {
