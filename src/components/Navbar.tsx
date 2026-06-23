@@ -27,7 +27,7 @@ export default function Navbar() {
     <header className="header-wrapper">
       <div className="container">
         <nav className="flex items-center justify-between py-sm">
-          <img src={Logo} alt="VeloxSites" width={160}  />
+          <img src={Logo} alt="VeloxSites" width={160} />
 
           <div className="desktop-only">
             <ul className="flex gap-1">
@@ -42,7 +42,7 @@ export default function Navbar() {
           <div className="desktop-only">
             <div className="flex items-center">
               <a className="reverse-color ml-lg" href="#">Login</a>
-              <Button text="Quero meu site" />
+              <a href="#contact"><Button text="Quero meu site" /></a>
             </div>
           </div>
 
