@@ -28,7 +28,7 @@ const testimonials = [
     role: 'Nutricionista',
     photo: 'https://i.pravatar.cc/80?img=47',
     text: 'Meu site ficou lindo e responsivo. Os pacientes elogiam toda vez. Valeu muito o investimento!',
-    stars: 5,
+    stars: 4,
   },
 ]
 
