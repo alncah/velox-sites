@@ -28,7 +28,7 @@
 .carousel {
     display: flex;
     overflow: hidden;
-    width: 90%;
+    width: 100%;
 }
 
 .carousel:hover .carousel-content {

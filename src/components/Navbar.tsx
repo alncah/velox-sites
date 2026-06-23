@@ -27,7 +27,7 @@ export default function Navbar() {
     <header className="header-wrapper">
       <div className="container">
         <nav className="flex items-center justify-between py-sm">
-          <img src={Logo} alt="VeloxSites" width={160} height={38} />
+          <img src={Logo} alt="VeloxSites" width={160}  />
 
           <div className="desktop-only">
             <ul className="flex gap-1">

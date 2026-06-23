@@ -12,7 +12,7 @@ export default function Footer() {
     <footer id="footer">
       <div className="container footer-grid">
         <div className="footer-brand">
-          <img src={Logo} alt="VeloxSites" width={140} height={32} />
+          <img src={Logo} alt="VeloxSites" width={140}  />
           <p>
             Sites profissionais entregues em 24 horas por um preço fixo.
             Do briefing à entrega, do jeito certo.
