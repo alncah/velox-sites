@@ -10,7 +10,7 @@
     position: absolute;
     right: 0;
     height: 60%;
-    padding-left: 30%;
+    max-width: 65%;
 }
 
 #hero p {
@@ -29,7 +29,7 @@
 #hero .content > div {
     width: fit-content;
     align-self: center;
-    margin-bottom: 20%;
+    margin-bottom: clamp(1.5rem, 12vh, 5rem);
 }
 
 @media (width >= 1280px) {
@@ -46,7 +46,7 @@
     #hero > img {
         top: 0;
         height: 82%;
-        padding-left: 55%;
+        max-width: 50%;
     }
 
     .content p {
