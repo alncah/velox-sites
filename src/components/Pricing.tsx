@@ -1,4 +1,4 @@
-import Button from './Button'
+import PricingCard from './PricingCard'
 import '../styles/pricing.css'
 
 const plans = [
@@ -61,31 +61,7 @@ export default function Pricing() {
 
       <section className="even-columns gap-1\.5">
         {plans.map((plan, i) => (
-          <div key={i} className={`pricing-card ${plan.highlight ? 'premium' : ''}`}>
-            {plan.badge && (
-              <span className="bonus">
-                <p>{plan.badge}</p>
-              </span>
-            )}
-            <span className="plan">
-              <h3>{plan.name}</h3>
-              <p>{plan.description}</p>
-            </span>
-            <span className="price">
-              <h2>{plan.price}</h2>
-              {plan.period && <p>{plan.period}</p>}
-            </span>
-            <a href="#contact">
-              <Button text={plan.ctaText} secondary={!plan.highlight} />
-            </a>
-            <span className="hr" />
-            {plan.features.map((feature, j) => (
-              <span key={j} className="features">
-                <span className="check-icon">✓</span>
-                <p>{feature}</p>
-              </span>
-            ))}
-          </div>
+          <PricingCard key={i} {...plan} />
         ))}
       </section>
     </section>

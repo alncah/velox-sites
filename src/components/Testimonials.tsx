@@ -1,3 +1,4 @@
+import TestimonialCard from './TestimonialCard'
 import '../styles/testimonials.css'
 
 const testimonials = [
@@ -30,26 +31,6 @@ const testimonials = [
     stars: 5,
   },
 ]
-
-function TestimonialCard({ name, role, photo, text, stars }: typeof testimonials[0]) {
-  return (
-    <div className="carousel-card">
-      <img src={photo} alt={`Foto de ${name}`} />
-      <span className="testimony">
-        <p>"{text}"</p>
-      </span>
-      <span className="rating">
-        {Array.from({ length: 5 }).map((_, i) => (
-          <span key={i} className={i < stars ? 'star-filled' : 'star-empty'}>★</span>
-        ))}
-      </span>
-      <span className="names">
-        <p>{name}</p>
-        <p>{role}</p>
-      </span>
-    </div>
-  )
-}
 
 export default function Testimonials() {
   return (
